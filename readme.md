@@ -16,4 +16,7 @@ Script melts data table defining activity name and subject id as identificator v
 Then it uses dcast function to get the table with averages for all measured variables for each subject and
 activity.
 
-Then script saves tidy data set as tdata.txt file in the working directory.
+Then script change variable type to more appropriate factor for activity and subject. Also it adds "Average of " 
+to all column names but activity and subject as they represent not measured values but their averages.
+
+Finally script saves tidy data set as tdata.txt file in the working directory.

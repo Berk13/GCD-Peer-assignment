@@ -37,28 +37,35 @@ Description of script could be found in readme.md file.
 Tidy data file is a plain text table with average measurement for each subject and activity.
 File has header row and following variables:
 
-* Subject	Identifier of volunteer. Integer, from 1 to 30.
-* Activity	Performed activity. One of six possible character vectors: 
+* Subject	Identifier of volunteer. Factor, 30 levels are integers from 1 to 30.
+* Activity	Performed activity. Factor, with following 6 levels: 
 		"LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS".
 
 * The following variables are the averages of means and standard deviations of all measurements for defined 
 subject and activity. Numeric variables are normalized and bounded within [-1,1].
 
 
-tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z,
-tGravityAcc-mean()-X, tGravityAcc-mean()-Y, tGravityAcc-mean()-Z, tGravityAcc-std()-X, tGravityAcc-std()-Y,
-tGravityAcc-std()-Z, tBodyAccJerk-mean()-X, tBodyAccJerk-mean()-Y, tBodyAccJerk-mean()-Z, tBodyAccJerk-std()-X,
-tBodyAccJerk-std()-Y, tBodyAccJerk-std()-Z, tBodyGyro-mean()-X, tBodyGyro-mean()-Y, tBodyGyro-mean()-Z,
-tBodyGyro-std()-X, tBodyGyro-std()-Y, tBodyGyro-std()-Z, tBodyGyroJerk-mean()-X, tBodyGyroJerk-mean()-Y,
-tBodyGyroJerk-mean()-Z, tBodyGyroJerk-std()-X, tBodyGyroJerk-std()-Y, tBodyGyroJerk-std()-Z,
-tBodyAccMag-mean(), tBodyAccMag-std(), tGravityAccMag-mean(), tGravityAccMag-std(), tBodyAccJerkMag-mean(),
-tBodyAccJerkMag-std(), tBodyGyroMag-mean(), tBodyGyroMag-std(), tBodyGyroJerkMag-mean(), tBodyGyroJerkMag-std(),
-fBodyAcc-mean()-X, fBodyAcc-mean()-Y, fBodyAcc-mean()-Z, fBodyAcc-std()-X, fBodyAcc-std()-Y, fBodyAcc-std()-Z,
-fBodyAccJerk-mean()-X, fBodyAccJerk-mean()-Y, fBodyAccJerk-mean()-Z, fBodyAccJerk-std()-X, fBodyAccJerk-std()-Y,
-fBodyAccJerk-std()-Z, fBodyGyro-mean()-X, fBodyGyro-mean()-Y, fBodyGyro-mean()-Z, fBodyGyro-std()-X,
-fBodyGyro-std()-Y, fBodyGyro-std()-Z, fBodyAccMag-mean(), fBodyAccMag-std(), fBodyBodyAccJerkMag-mean(),
-fBodyBodyAccJerkMag-std(), fBodyBodyGyroMag-mean(), fBodyBodyGyroMag-std(), fBodyBodyGyroJerkMag-mean(),
-fBodyBodyGyroJerkMag-std()
+Average of tBodyAcc-mean()-X, Average of tBodyAcc-mean()-Y, Average of tBodyAcc-mean()-Z, Average of tBodyAcc-std()-X, 
+Average of tBodyAcc-std()-Y, Average of tBodyAcc-std()-Z, Average of tGravityAcc-mean()-X, 
+Average of tGravityAcc-mean()-Y, Average of tGravityAcc-mean()-Z, Average of tGravityAcc-std()-X, 
+Average of tGravityAcc-std()-Y, Average of tGravityAcc-std()-Z, Average of tBodyAccJerk-mean()-X, 
+Average of tBodyAccJerk-mean()-Y, Average of tBodyAccJerk-mean()-Z, Average of tBodyAccJerk-std()-X,
+Average of tBodyAccJerk-std()-Y, Average of tBodyAccJerk-std()-Z, Average of tBodyGyro-mean()-X, 
+Average of tBodyGyro-mean()-Y, Average of tBodyGyro-mean()-Z, Average of tBodyGyro-std()-X, Average of tBodyGyro-std()-Y, 
+Average of tBodyGyro-std()-Z, Average of tBodyGyroJerk-mean()-X, Average of tBodyGyroJerk-mean()-Y,
+Average of tBodyGyroJerk-mean()-Z, Average of tBodyGyroJerk-std()-X, Average of tBodyGyroJerk-std()-Y, 
+Average of tBodyGyroJerk-std()-Z, Average of tBodyAccMag-mean(), Average of tBodyAccMag-std(), 
+Average of tGravityAccMag-mean(), Average of tGravityAccMag-std(), Average of tBodyAccJerkMag-mean(),
+Average of tBodyAccJerkMag-std(), Average of tBodyGyroMag-mean(), Average of tBodyGyroMag-std(), 
+Average of tBodyGyroJerkMag-mean(), Average of tBodyGyroJerkMag-std(), Average of fBodyAcc-mean()-X, 
+Average of fBodyAcc-mean()-Y, Average of fBodyAcc-mean()-Z, Average of fBodyAcc-std()-X, Average of fBodyAcc-std()-Y, 
+Average of fBodyAcc-std()-Z, Average of fBodyAccJerk-mean()-X, Average of fBodyAccJerk-mean()-Y, 
+Average of fBodyAccJerk-mean()-Z, Average of fBodyAccJerk-std()-X, Average of fBodyAccJerk-std()-Y,
+Average of fBodyAccJerk-std()-Z, Average of fBodyGyro-mean()-X, Average of fBodyGyro-mean()-Y, 
+Average of fBodyGyro-mean()-Z, Average of fBodyGyro-std()-X, Average of fBodyGyro-std()-Y, Average of fBodyGyro-std()-Z, 
+Average of fBodyAccMag-mean(), Average of fBodyAccMag-std(), Average of fBodyBodyAccJerkMag-mean(),
+Average of fBodyBodyAccJerkMag-std(), Average of fBodyBodyGyroMag-mean(), Average of fBodyBodyGyroMag-std(), 
+Average of fBodyBodyGyroJerkMag-mean(), Average of fBodyBodyGyroJerkMag-std()
 
 
 

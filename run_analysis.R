@@ -31,4 +31,9 @@ colnames(raw_data) <- c(rd_features$V2,"Subject","Activity")
 md_data <- melt(raw_data,id=c("Subject","Activity"))
 tidy_data <- dcast(md_data,Subject + Activity ~...,mean)
 
+tidy_data$Subject <- as.factor(tidy_data$Subject)
+tidy_data$Activity <- as.factor(tidy_data$Activity)
+colnames(tidy_data)[3:ncol(tidy_data)] <- 
+    paste("Average of", colnames(tidy_data)[3:ncol(tidy_data)])
+
 write.table(tidy_data,"tdata.txt",row.names = FALSE)
