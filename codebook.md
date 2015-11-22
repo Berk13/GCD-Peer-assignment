@@ -42,7 +42,7 @@ File has header row and following variables:
 		"LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS".
 
 * The following variables are the averages of means and standard deviations of all measurements for defined 
-subject and activity. Variables are normalized and bounded within [-1,1].
+subject and activity. Numeric variables are normalized and bounded within [-1,1].
 
 
 tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z,
